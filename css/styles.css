@@ -94,7 +94,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.38;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--brand-dark-color);
 }
@@ -104,6 +104,7 @@ p {
   align-items: center;
   gap: 46px;
   padding: 32px 0 32px 0;
+  position: relative; /*For positioning*/
 }
 
 .nav {
@@ -118,6 +119,46 @@ p {
 .nav:focus {
   color: var(--accent-primary-color);
 }
+
+/* Begining - Underlining a link to the current page */
+
+/* Agency */
+
+.underline-agency:visited {
+  color: var(--accent-primary-color);
+}
+
+.underline-agency::after {
+  content: "";
+  display: block;
+  width: 53px;
+  height: 4px;
+  background: var(--accent-primary-color);
+  border-radius: 2px;
+  position: absolute;
+  transform: translateY(29px);
+  /* top: 48px; */
+}
+
+/* Portfolio */
+
+.underline-portfolio:visited {
+  color: var(--accent-primary-color);
+}
+
+.underline-portfolio::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 4px;
+  background: var(--accent-primary-color);
+  border-radius: 2px;
+  position: absolute;
+  transform: translateY(29px);
+  /* top: 48px; */
+}
+
+/* End - Underlining a link to the current page */
 
 .contact-wrapper {
   display: flex;
