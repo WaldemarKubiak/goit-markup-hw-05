@@ -349,9 +349,31 @@ p {
   color: var(--text-secondary-color);
 }
 
+/* What we do */
+
 .boxes {
   display: flex;
   gap: 30px;
+}
+
+.box-label {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--text-tertiary-color);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 0;
+  background-color: #2f303acc;
 }
 
 .photo-block {
