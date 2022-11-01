@@ -28,7 +28,9 @@
           <nav>
             <ul class="li-no-dots links-wrapper">
               <li class="underlined-accent">
-                <a href="./index.html" class="nav link-no-underline backlight-agency"
+                <a
+                  href="./index.html"
+                  class="nav link-no-underline backlight-agency"
                   >Agencja</a
                 >
               </li>
@@ -72,9 +74,11 @@
         <div class="container">
           <div class="main-header">
             <h1 class="header-one">
-              Efektywne rozwiązania dla waszego biznesu
+              efektywne rozwiązania dla waszego biznesu
             </h1>
-            <button type="button" class="button">Zamów usługę</button>
+            <button type="button" class="button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </div>
@@ -476,5 +480,7 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal></div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
